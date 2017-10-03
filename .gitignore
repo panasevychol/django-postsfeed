@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# macOS files
+.DS_Store
+
+# databases
+*.sqlite3
