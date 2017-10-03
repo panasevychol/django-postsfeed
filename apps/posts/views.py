@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.core import serializers
-from django.http import JsonResponse, HttpResponse, HttpResponseBadRequest, HttpResponseForbidden
-from django.shortcuts import render
+from django.http import (
+    JsonResponse, HttpResponse, HttpResponseBadRequest, HttpResponseForbidden
+)
 
 from apps.posts.models import Post
 from apps.posts.constants import (

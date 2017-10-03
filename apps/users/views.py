@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.http import HttpResponseBadRequest, HttpResponse, JsonResponse
-from django.shortcuts import render
 
 from apps.users.constants import ROLES
 from apps.users.models import User
