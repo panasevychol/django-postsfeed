@@ -41,6 +41,7 @@ GET parameters:
 - body_contains
 - limit
 - offset
+
 Example: `/posts/show?token=some-token&title_contains=substring&limit=2`
 
 #### /posts/create
@@ -50,6 +51,7 @@ GET parameters:
 - title
 - body
 - token
+
 Example: `/posts/create?token=some-token&title=cool title&body=cool body`
 
 #### /posts/approve
@@ -58,6 +60,7 @@ Approve posts. Only editors allowed to do that
 GET parameters:
 - id
 - token
+
 Example: `/posts/approve?token=some-token&id=1`
 
 #### /users/register
@@ -67,6 +70,7 @@ GET parameters:
 - email
 - password
 - role (editor or reporter)
+
 Example: `/users/register?email=email@example.com&password=password&role=reporter`
 
 #### /users/get-token
@@ -75,6 +79,7 @@ Request for user token with email and password
 GET parameters:
 - email
 - password
+
 Example: `/users/get-token?email=email@example.com&password=password`
 
 #### /users/get-profile
@@ -82,4 +87,5 @@ Get user's profile by token
 
 GET parameters:
 - token
+
 Example: `/users/get-profile?token=some-token`
